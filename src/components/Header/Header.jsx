@@ -7,7 +7,7 @@ import { faShoppingCart } from '@fortawesome/free-solid-svg-icons/faShoppingCart
 
 function Header() {
   return (
-    <header className="bg-green-600 text-white w-full py-2 md:py-1">
+    <header className="bg-green-600 text-white w-full px-3 py-2 md:py-1">
       <div className="container mx-auto flex justify-between items-center">
         <nav className="relative font-medium text-sm hidden md:flex md:space-x-6">
           <ul className="flex space-x-6">

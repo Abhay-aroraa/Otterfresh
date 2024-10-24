@@ -3,7 +3,7 @@ import Slider from 'react-slick';
 import veg1 from "../../assets/first/veg.webp";
 import veg2 from "../../assets/first/veg2.webp";
 import salad from '../../assets/first/g.webp';
-import veg3 from "../../assets/first/D.webp";
+import veg3 from "../../assets/first/d.webp";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./Cart.css";
