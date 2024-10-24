@@ -1,0 +1,33 @@
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 1rem; 
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav li {
+  position: relative; 
+}
+
+nav a {
+  transition: color 0.3s ease; 
+}
+
+.group:hover > ul {
+  display: block; 
+}
+
+.md\:hidden {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .md\:hidden {
+    display: flex; 
+  }
+}

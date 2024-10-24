@@ -1,0 +1,65 @@
+.whole {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    color:slate;
+}
+
+.container {
+    padding: 20px;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.md\:flex-row {
+    flex-direction: row;
+}
+
+.md\:order-1 {
+    order: 1;
+}
+
+.md\:order-2 {
+    order: 2;
+}
+
+.img {
+    width: 100%;
+    height: auto;
+}
+
+.text {
+    margin-bottom: 10px;
+}
+
+button {
+    transition: all 0.3s ease;
+}
+
+.rounded-lg {
+    border-radius: 0.5rem; /* Rounded corners for the image */
+}
+
+.shadow-lg {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+@media (max-width: 768px) {
+    .flex {
+        flex-direction: column;
+    }
+
+    .md\:order-1 {
+        order: 1; /* Text sections will stay on top */
+    }
+
+    .md\:order-2 {
+        order: 2; /* Image will be below */
+    }
+}
