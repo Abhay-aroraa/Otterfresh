@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from '../Header/Header';
-import Footer from '../Footer/footer';
+import Footer from '../Footer/Footer';
 import Reviews from '../reviews/Reviews';
 import Plans from '../plans/Plans'
 import Recipe from '../Recipe/Recipe';
