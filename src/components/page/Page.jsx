@@ -32,8 +32,8 @@ function Page() {
                     Shop now
                 </button>
             </div>
-            <aside style={{ position: 'fixed', right: '40px', bottom: '30px', zIndex: 1000 }}>
-                <FontAwesomeIcon icon={faWhatsapp} className='bg-green-600 text-white p-2 rounded-full text-4xl hover:cursor-pointer' />
+            <aside style={{ position: 'fixed', right: '20px', bottom: '90px', zIndex: 1000 }}>
+                <FontAwesomeIcon icon={faWhatsapp} className='bg-green-600 text-white p-2 rounded-full text-2xl hover:cursor-pointer' />
             </aside>
         </div>
 

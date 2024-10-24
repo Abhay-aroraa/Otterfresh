@@ -1,0 +1,72 @@
+/* Side.css */
+
+.social-fixed {
+    position: fixed;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Social Icon Styles */
+.social-icon {
+    color: #ffffff;
+    border-radius: 5px;
+    margin: 5px 0;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    width: 40px; /* Initial width for the icon */
+    overflow: hidden; /* Prevent text overflow */
+    white-space: nowrap; /* Prevent text wrapping */
+    transition: width 0.3s ease-in-out, padding-left 0.3s ease-in-out; /* Smooth transition */
+    position: relative;
+}
+
+
+.social-icon span {
+    margin-left: -150px; /* Initially position text to the left */
+    opacity: 0; /* Hide text initially */
+    transition: margin-left 0.3s ease-in-out, opacity 0.3s ease-in-out; /* Smooth transition */
+}
+
+/* Increase width and show text on hover */
+.social-icon:hover {
+    width: 150px; /* Expand width on hover */
+}
+
+.social-icon:hover span {
+    margin-left: 10px; /* Text slides in from left on hover */
+    opacity: 1; /* Show text on hover */
+}
+
+/* Icon styles */
+.social-icon i {
+    font-size: 20px; /* Adjust icon size */
+}
+
+/* Hide social icons when screen width is below 789px */
+@media (max-width: 789px) {
+    .social-fixed {
+        display: none; /* Hide the entire container */
+    }
+}
+.twitter {
+    background-color: #1DA1F2; 
+}
+
+.facebook {
+    background-color: #3b5998; 
+}
+
+.youtube {
+    background-color: #FF0000; 
+}
+
+.x {
+    background-color: #000; 
+    color: #ffffff; 
+}

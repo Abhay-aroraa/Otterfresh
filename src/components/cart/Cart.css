@@ -1,2 +1,14 @@
+.slick-arrow {
+    background: #4CAF50;
+    color:#4CAF50 ; 
+   
+    justify-items:center;
+    
+    cursor: pointer;
+}
 
+.slick-arrow:hover{
+    background:green;
+
+}
 

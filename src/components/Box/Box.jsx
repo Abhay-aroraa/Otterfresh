@@ -8,10 +8,7 @@ function Box() {
     return (
         <div className='my-10 relative w-full'>
             <div className='background'>
-               
                 <div className='absolute inset-0 opacity-30 backdrop-blur-lg'></div>
-            
-
             <div className='relative z-10 flex flex-col md:flex-row gap-6 items-center justify-center p-4 text-white'>
                 <img className='mt-4 w-full md:w-[30rem] h-auto max-h-[30rem] object-cover sm:w-[20rem]' src={box2} alt="Overlay Image" />
                 <div className='text-center md:text-left md:ml-6'>

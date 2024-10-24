@@ -7,6 +7,7 @@ import veg3 from "../../assets/first/d.webp";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./Cart.css";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const data = [
     {
@@ -35,6 +36,33 @@ const data = [
     },
 ];
 
+const PrevArrow = (props) => {
+    const { className, style, onClick } = props;
+    return (
+        <div
+            className={`${className} absolute left-0 z-10 flex items-center rounded-full justify-center `}
+            style={{ ...style, display: "block", cursor: "pointer" }}
+            onClick={onClick}
+        >
+            <FontAwesomeIcon icon="fa-solid fa-chevron-left" className="text-lg" />
+        </div>
+    );
+};
+
+const NextArrow = (props) => {
+    const { className, style, onClick } = props;
+    return (
+        <div
+            className={`${className} absolute right-0 z-10 flex items-center justify-center rounded-full shadow-md`}
+            style={{ ...style, display: "block", cursor: "pointer" }}
+            onClick={onClick}
+        >
+            <FontAwesomeIcon icon="fa-solid fa-chevron-right" className="text-lg" style={{ color: "#1c6a1b" }} />
+        </div>
+    );
+};
+
+
 const SliderComponent = () => {
     const settings = {
         dots: true,
@@ -42,24 +70,25 @@ const SliderComponent = () => {
         speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
-        adaptiveHeight: true, 
+        nextArrow: <NextArrow />,
+        prevArrow: <PrevArrow />,
         responsive: [
             {
-                breakpoint: 640, 
+                breakpoint: 640,
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,
                 },
             },
             {
-                breakpoint: 768, 
+                breakpoint: 768,
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,
                 },
             },
             {
-                breakpoint: 1024, 
+                breakpoint: 1024,
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,
@@ -98,3 +127,4 @@ const SliderComponent = () => {
 };
 
 export default SliderComponent;
+
