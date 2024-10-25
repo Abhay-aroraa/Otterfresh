@@ -14,3 +14,52 @@ Header.css
   nav a:hover {
     color: #d1d5db; /* Light gray on hover */
   }
+
+  /* For smooth sidebar animation */
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.fixed {
+  animation: slideInLeft 0.3s ease-out forwards;
+}
+/* In your global CSS or in a CSS module */
+@media (max-width: 786px) {
+  header {
+    height: 20px; /* Decrease the height as required */
+    padding: 5px 0; /* Adjust padding for smaller screens */
+  }
+
+  .mobile-menu {
+    height: 100%; /* Set mobile menu height */
+  }
+
+  .mobile-toggle-button {
+    font-size: 1.5rem; /* Adjust the size of the mobile menu toggle button */
+  }
+
+  img {
+    height: 30px; /* Reduce logo size */
+  }
+}
+
+.absolute {
+  position: absolute;
+}
+
+.hidden {
+  display: none;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
