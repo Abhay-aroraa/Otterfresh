@@ -15,7 +15,7 @@ import { faCake, faHeart, faLocationArrow, faMessage, faMobile, faPhone, faShop,
 function Footer() {
   return (
     <>
-      <div className="px-4 md:px-20 ml-10  bg-white text-gray-800">
+      <div className="px-4 md:px-20 xl:ml-10 mb-2  bg-white text-gray-800">
         <div className="flex sm:grid sm:grid-cols-2 lg:flex  text-start items-start gap-5 w-full">
           {/* Contact Section */}
           <div className="mx-2 md:mt-7  2xl:mx-10 text-gray-500 font-light text-sm md:ml-10 p-2 rounded-lg">
@@ -45,21 +45,37 @@ function Footer() {
             </p>
           </div>
 
-          {/* Information Section */}
-          <div className="flex-1 md:py-10 mx-2 w-full 2xl:mx-10 max-w-xs md:w-60">
+
+          <div className="relative  2xl:mx-10 max-w-xs md:w-60 mt-7">
             <div className="item">
-              <img src={RL} alt="Logo" className="h-20 w-full max-w-full" />
+              {/* Overlay Image positioned at the start of the background image */}
+              <img src={RL} alt="Logo" className="absolute top-0 left-0 h-20" />
             </div>
             <div>
-              <p className="text-start text-gray-500 font-light mb-1 text-sm">
+              <p className="text-start text-gray-500 font-light mb-1 text-sm ">
                 Bringing together traditional wisdom, science, and technology for sustainable, nutritious produce. Fostering a healthier you and a greener planet with easy access to clean food.
               </p>
               <h2 className="text-sm mt-5 text-start">Click to learn about Red Otter Farms</h2>
             </div>
           </div>
 
+
+
+          {/* Information Section */}
+          {/* <div className="flex-1 md:py-10 mx-2 w-full 2xl:mx-10 max-w-xs md:w-60">
+            <div className="item">
+              <img src={RL} alt="Logo" className="h-20 w-full max-w-full justify-end" />
+            </div>
+            <div>
+              <p className="text-start text-gray-500 font-light mb-1 text-sm ">
+                Bringing together traditional wisdom, science, and technology for sustainable, nutritious produce. Fostering a healthier you and a greener planet with easy access to clean food.
+              </p>
+              <h2 className="text-sm mt-5 text-start">Click to learn about Red Otter Farms</h2>
+            </div>
+          </div> */}
+
           {/* Useful Links Section */}
-          <div className="w-full md:w-48 justify-center my-10 mx-2 text-sm  2xl:mx-10 text-gray-500 text-start">
+          <div className="w-full md:w-48 justify-center my-10 mx-2 text-sm ml-10  2xl:mx-10 text-gray-500 text-start">
             <h2 className="text-black text-sm font-semibold">USEFUL LINKS</h2>
             <p className="mt-2">Terms and Conditions</p>
             <p className="mt-2">Privacy Policy</p>
