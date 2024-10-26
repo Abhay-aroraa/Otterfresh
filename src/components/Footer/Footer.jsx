@@ -101,7 +101,7 @@ function Footer() {
 
         <hr className="border-gray-300 mx-5" />
 
-        <div className=" md:flex flex-col md:flex-row justify-between hidden md:flex w-full">
+        <div className=" md:flex flex-col md:flex-row justify-between hidden w-full">
           <div className="justify-center py-3">
             <p className="w-full bottom-0 h-8 text-xs text-gray-500 text-start px-3">
               © 2019-2023 OtterFresh by

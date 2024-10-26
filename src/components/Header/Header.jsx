@@ -29,7 +29,7 @@ function Header() {
   }, [isMobileMenuOpen]);
 
   return (
-    <header className="bg-green-600 flex  text-white lg:flex justify-between  md:px-8  py-4">
+    <header className="bg-green-600 flex  text-white lg:flex justify-between xl:justify-evenly md:px-8  py-4">
       <div className="relative top-5 md:top-2">
         {/* Mobile Toggle Button */}
         <button
@@ -100,7 +100,7 @@ function Header() {
      
       {/* Right-side Icons */}
       <div className="flex items-center justify-between lg:space-x-6">
-        <div className="hidden  lg:flex space-x-6">
+        <div className="hidden  lg:flex ">
           <a href="#" className="hover:text-gray-400">LOGIN / REGISTER</a>
         </div>
 
