@@ -98,7 +98,7 @@ const SliderComponent = () => {
     };
 
     return (
-        <div className='mx-4 md:mx-20 my-10'>
+        <div className='mx-4 md:mx-20 md:my-10 mt-4'>
             <div className="flex items-center my-10">
                 <hr className="flex-grow border-gray-300" />
                 <h1 className="mx-4 text-gray-400 font-bold text-2xl">Weekly Specials</h1>

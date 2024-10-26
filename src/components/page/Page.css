@@ -1,6 +1,10 @@
-.background{
-    background-image: url("https://images.pexels.com/photos/428301/pexels-photo-428301.jpeg?auto=compress&cs=tinysrgb&w=400")
+.background {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRfXWG-5UrERkKOZC5iiTXQ3vXBv2J99CSPA&s");
+    background-size: cover;       /* Ensures the image covers the whole element */
+    background-position: center;   /* Centers the image */
+    background-repeat: no-repeat;  /* Prevents the image from repeating */
 }
+
 .whatsapp-icon {
     font-size: 4rem; 
 }

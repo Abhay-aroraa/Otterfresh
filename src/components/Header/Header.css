@@ -60,6 +60,3 @@ Header.css
   display: flex;
 }
 
-.flex-col {
-  flex-direction: column;
-}
